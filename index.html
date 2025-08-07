@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Sukamaju - Website Resmi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="assets/logo-desa.png" alt="Logo Desa Sukamaju" class="logo">
+                <div class="title-section">
+                    <h1>Desa Sukamaju</h1>
+                    <p>Kecamatan Cibeber, Kabupaten Cianjur</p>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#profil" class="nav-link">Profil <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#profil-desa">Profil Desa</a></li>
+                            <li><a href="#visi-misi">Visi & Misi</a></li>
+                            <li><a href="#struktur">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#data" class="nav-link">Data & Info <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#data-statistik">Data & Statistik</a></li>
+                            <li><a href="#peta-desa">Peta Desa</a></li>
+                            <li><a href="#apbdes">APBDes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#umkm" class="nav-link">UMKM</a></li>
+                    <li><a href="#berita" class="nav-link">Berita</a></li>
+                    <li><a href="#galeri" class="nav-link">Galeri</a></li>
+                    <li class="dropdown">
+                        <a href="#layanan" class="nav-link">Layanan <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#layanan-publik">Layanan Publik</a></li>
+                            <li><a href="#ppid">PPID</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Beranda Section -->
+        <section id="beranda" class="hero-section">
+            <div class="hero-overlay">
+                <img src="assets/hero-bg.jpg" alt="Pemandangan Desa Sukamaju" class="hero-bg">
+                <div class="container hero-content">
+                    <h1 class="hero-title">Selamat Datang di Website Resmi Desa Sukamaju</h1>
+                    <!-- <p class="hero-subtitle">Membangun Desa Digital untuk Pelayanan Publik yang Lebih Baik</p>
+                    <div class="hero-text">
+                        <p>Assalamualaikum Wr. Wb. dan Selamat datang di website resmi Pemerintah Desa Sukamaju. Website ini hadir sebagai wujud komitmen kami dalam memberikan pelayanan publik berbasis digital yang transparan, efektif, dan mudah diakses oleh seluruh masyarakat.</p>
+                        <p>Melalui platform digital ini, kami berharap dapat mempermudah akses informasi seputar kegiatan desa, layanan administratif, serta berbagai program pembangunan yang sedang dan akan dilaksanakan. Semangat digitalisasi ini sejalan dengan visi kami untuk mewujudkan Desa Sukamaju yang maju, mandiri, dan sejahtera.</p>
+                        <p>Kami mengundang seluruh warga masyarakat untuk aktif memanfaatkan layanan online yang tersedia, mulai dari informasi terkini, layanan surat-menyurat, hingga pengaduan dan saran untuk kemajuan desa. Bersama-sama, mari kita wujudkan Desa Sukamaju yang lebih baik melalui pemanfaatan teknologi informasi.</p>
+                    </div> -->
+                    <div class="hero-buttons">
+                        <a href="#layanan-publik" class="btn btn-primary">Layanan Online</a>
+                        <a href="#profil-desa" class="btn btn-secondary">Profil Desa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Services -->
+        <section class="quick-services">
+            <div class="container">
+                <h2 class="section-title">Layanan Cepat</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Surat Online</h3>
+                        <p>Ajukan surat keterangan secara online</p>
+                        <a href="#layanan-publik" class="service-link">Akses Layanan</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Desa</h3>
+                        <p>Informasi statistik dan demografi desa</p>
+                        <a href="#data-statistik" class="service-link">Lihat Data</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-store"></i>
+                        <h3>UMKM Desa</h3>
+                        <p>Produk dan usaha masyarakat desa</p>
+                        <a href="#umkm" class="service-link">Jelajahi UMKM</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Kontak</h3>
+                        <p>Hubungi pemerintah desa</p>
+                        <a href="#kontak" class="service-link">Hubungi Kami</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Desa Section -->
+        <section id="profil-desa" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Profil Desa Sukamaju</h2>
+                <div class="profile-content">
+                    <div class="profile-image">
+                        <img src="assets/kantor-desa.jpg" alt="Kantor Desa Sukamaju" class="profile-img">
+                    </div>
+                    <div class="profile-text">
+                        <h3>Sejarah dan Kondisi Geografis</h3>
+                        <p>Desa Sukamaju merupakan salah satu desa yang terletak di Kecamatan Maju Jaya, Kabupaten Bahagia, Provinsi Jawa Barat. Desa ini memiliki sejarah panjang sebagai kawasan pertanian yang subur dengan masyarakat yang gotong royong dan penuh semangat membangun kampung halaman.</p>
+                        
+                        <p>Secara geografis, Desa Sukamaju terletak pada ketinggian 450 meter di atas permukaan laut dengan luas wilayah sekitar 8,5 kilometer persegi. Desa ini berbatasan dengan Desa Harapan Jaya di sebelah utara, Desa Maju Bersama di sebelah selatan, Desa Sejahtera di sebelah barat, dan Desa Makmur di sebelah timur.</p>
+
+                        <p>Dengan jumlah penduduk sekitar 4.250 jiwa yang terdiri dari 1.180 kepala keluarga, Desa Sukamaju merupakan komunitas yang majemuk namun harmonis. Mayoritas penduduk bermata pencaharian sebagai petani, peternak, dan wirausaha kecil. Kehidupan sosial budaya masyarakat sangat kental dengan nilai-nilai kekeluargaan, saling gotong royong, dan menjunjung tinggi adat istiadat leluhur.</p>
+
+                        <p>Kondisi alam yang sejuk dengan hamparan sawah yang menghijau, sungai jernih yang mengalir, serta udara yang masih bersih menjadikan Desa Sukamaju sebagai kampung yang asri dan nyaman untuk ditinggali. Tradisi keagamaan dan budaya lokal masih terjaga dengan baik, tercermin dari berbagai kegiatan rutin seperti pengajian, kerja bakti, dan perayaan hari-hari besar nasional maupun keagamaan yang selalu dilakukan secara bersama-sama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi Misi Section -->
+        <section id="visi-misi" class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Visi & Misi Desa</h2>
+                <div class="visi-misi-content">
+                    <p class="intro-text">Arah pembangunan desa yang jelas dan terukur merupakan fondasi utama dalam mewujudkan kemajuan dan kesejahteraan masyarakat. Oleh karena itu, Pemerintah Desa Sukamaju telah menetapkan visi dan misi sebagai pedoman dalam setiap langkah pembangunan dan pelayanan kepada masyarakat.</p>
+                    
+                    <div class="visi-misi-grid">
+                        <div class="visi-card">
+                            <h3><i class="fas fa-eye"></i> Visi</h3>
+                            <div class="visi-content">
+                                <p>"Terwujudnya Desa Sukamaju sebagai desa mandiri, maju, dan sejahtera yang berbasis pada kearifan lokal, pembangunan berkelanjutan, dan partisipasi masyarakat yang aktif dalam era digital menuju tahun 2030."</p>
+                            </div>
+                        </div>
+
+                        <div class="misi-card">
+                            <h3><i class="fas fa-bullseye"></i> Misi</h3>
+                            <div class="misi-content">
+                                <ol>
+                                    <li>Meningkatkan kualitas pelayanan publik berbasis teknologi informasi yang transparan, efektif, dan mudah diakses masyarakat.</li>
+                                    <li>Mengembangkan potensi ekonomi lokal melalui pemberdayaan UMKM, pertanian modern, dan pariwisata desa yang berkelanjutan.</li>
+                                    <li>Membangun infrastruktur desa yang memadai untuk mendukung aktivitas ekonomi, sosial, dan budaya masyarakat.</li>
+                                    <li>Melestarikan nilai-nilai budaya lokal dan lingkungan hidup sebagai dasar pembangunan berkelanjutan.</li>
+                                    <li>Meningkatkan kualitas sumber daya manusia melalui pendidikan, kesehatan, dan pelatihan keterampilan.</li>
+                                    <li>Memperkuat partisipasi dan gotong royong masyarakat dalam setiap program pembangunan desa.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Struktur Organisasi -->
+        <section id="struktur" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Struktur Organisasi Pemerintah Desa</h2>
+                <div class="struktur-content">
+                    <p class="intro-text">Struktur organisasi Pemerintah Desa Sukamaju dirancang untuk memberikan pelayanan terbaik kepada masyarakat. Setiap posisi memiliki tugas dan tanggung jawab yang jelas dalam mendukung kelancaran roda pemerintahan dan pembangunan desa. Kepala Desa sebagai pemimpin tertinggi bertanggung jawab atas kebijakan strategis, sementara Sekretaris Desa dan para Kepala Seksi melaksanakan tugas operasional sesuai bidangnya masing-masing. Badan Permusyawaratan Desa (BPD) berperan sebagai mitra kerja yang memberikan fungsi pengawasan dan legislasi di tingkat desa.</p>
+                    
+                    <div class="org-chart">
+                        <div class="org-level-1">
+                            <div class="org-card kepala-desa">
+                                <img src="assets/kades.jpg" alt="Kepala Desa" class="org-photo">
+                                <h4>H. Ahmad Suherman, S.Sos</h4>
+                                <p class="position">Kepala Desa</p>
+                                <p class="description">Memimpin dan mengoordinasikan seluruh kegiatan pemerintahan desa</p>
+                            </div>
+                        </div>
+
+                        <div class="org-level-2">
+                            <div class="org-card">
+                                <img src="assets/sekdes.jpg" alt="Sekretaris Desa" class="org-photo">
+                                <h4>Drs. Bambang Sutrisno</h4>
+                                <p class="position">Sekretaris Desa</p>
+                                <p class="description">Menyelenggarakan urusan administrasi dan ketatausahaan</p>
+                            </div>
+                            <div class="org-card">
+                                <img src="assets/bpd-ketua.jpg" alt="Ketua BPD" class="org-photo">
+                                <h4>Hj. Siti Fatimah, S.Pd</h4>
+                                <p class="position">Ketua BPD</p>
+                                <p class="description">Mengawasi dan memberikan persetujuan terhadap kebijakan desa</p>
+                            </div>
+                        </div>
+
+                        <div class="org-level-3">
+                            <div class="org-card">
+                                <img src="assets/kasi-pemerintahan.jpg" alt="Kasi Pemerintahan" class="org-photo">
+                                <h4>Andi Firmansyah, S.AP</h4>
+                                <p class="position">Kasi Pemerintahan</p>
+                                <p class="description">Mengelola administrasi kependudukan dan pelayanan umum</p>
+                            </div>
+                            <div class="org-card">
+                                <img src="assets/kasi-kesra.jpg" alt="Kasi Kesejahteraan" class="org-photo">
+                                <h4>Dr. Rina Kartika, S.Sos</h4>
+                                <p class="position">Kasi Kesejahteraan</p>
+                                <p class="description">Menangani bidang kesehatan, pendidikan, dan sosial budaya</p>
+                            </div>
+                            <div class="org-card">
+                                <img src="assets/kasi-pembangunan.jpg" alt="Kasi Pembangunan" class="org-photo">
+                                <h4>Ir. Dedi Hermawan</h4>
+                                <p class="position">Kasi Pembangunan</p>
+                                <p class="description">Melaksanakan program pembangunan dan infrastruktur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Statistik -->
+        <section id="data-statistik" class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Data & Statistik Desa</h2>
+                <div class="statistik-content">
+                    <p class="intro-text">Data kependudukan merupakan informasi fundamental yang sangat penting dalam perencanaan pembangunan desa. Melalui pendataan yang akurat dan terkini, pemerintah desa dapat merumuskan program-program yang tepat sasaran sesuai kebutuhan masyarakat. Data statistik berikut memberikan gambaran komprehensif tentang kondisi demografis Desa Sukamaju yang menjadi dasar dalam pengambilan kebijakan dan alokasi sumber daya pembangunan.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <h3>4.250</h3>
+                            <p>Total Penduduk</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-home"></i>
+                            <h3>1.180</h3>
+                            <p>Kepala Keluarga</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-male"></i>
+                            <h3>2.195</h3>
+                            <p>Laki-laki</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-female"></i>
+                            <h3>2.055</h3>
+                            <p>Perempuan</p>
+                        </div>
+                    </div>
+
+                    <div class="demographics-section">
+                        <h3>Sebaran Usia Penduduk</h3>
+                        <div class="age-distribution">
+                            <div class="age-group">
+                                <h4>0-17 Tahun (Anak-anak)</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 28%"></div>
+                                </div>
+                                <span>1.190 orang (28%)</span>
+                            </div>
+                            <div class="age-group">
+                                <h4>18-59 Tahun (Produktif)</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 62%"></div>
+                                </div>
+                                <span>2.635 orang (62%)</span>
+                            </div>
+                            <div class="age-group">
+                                <h4>60+ Tahun (Lansia)</h4>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 10%"></div>
+                                </div>
+                                <span>425 orang (10%)</span>
+                            </div>
+                        </div>
+
+                        <div class="livelihood-section">
+                            <h3>Mata Pencaharian Utama</h3>
+                            <div class="livelihood-grid">
+                                <div class="livelihood-item">
+                                    <i class="fas fa-seedling"></i>
+                                    <span>Petani: 45%</span>
+                                </div>
+                                <div class="livelihood-item">
+                                    <i class="fas fa-store"></i>
+                                    <span>Wirausaha: 25%</span>
+                                </div>
+                                <div class="livelihood-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Pegawai: 15%</span>
+                                </div>
+                                <div class="livelihood-item">
+                                    <i class="fas fa-tools"></i>
+                                    <span>Buruh: 10%</span>
+                                </div>
+                                <div class="livelihood-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Pelajar: 5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peta Desa -->
+        <section id="peta-desa" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Peta Desa Sukamaju</h2>
+                <div class="peta-content">
+                    <p class="intro-text">Peta Desa Sukamaju menggambarkan letak geografis dan sebaran fasilitas penting yang ada di wilayah desa. Dengan batas wilayah yang jelas dan fasilitas yang tersebar merata, desa ini memiliki aksesibilitas yang baik untuk mendukung aktivitas sehari-hari masyarakat. Kantor desa berada di pusat wilayah untuk memudahkan pelayanan, sementara fasilitas pendidikan, kesehatan, dan ibadah tersebar di berbagai titik strategis untuk menjangkau seluruh warga.</p>
+                    
+                    <div class="map-container">
+                        <img src="assets/peta-desa.jpg" alt="Peta Desa Sukamaju" class="map-image">
+                        <div class="map-legend">
+                            <h4>Keterangan Peta</h4>
+                            <ul>
+                                <li><span class="legend-dot red"></span> Kantor Desa</li>
+                                <li><span class="legend-dot blue"></span> Sekolah</li>
+                                <li><span class="legend-dot green"></span> Puskesmas</li>
+                                <li><span class="legend-dot orange"></span> Masjid/Musholla</li>
+                                <li><span class="legend-dot purple"></span> Pusat UMKM</li>
+                                <li><span class="legend-dot brown"></span> Pasar Desa</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="boundary-info">
+                        <h3>Batas Wilayah Desa</h3>
+                        <div class="boundary-grid">
+                            <div class="boundary-item">
+                                <i class="fas fa-arrow-up"></i>
+                                <strong>Utara:</strong> Desa Harapan Jaya
+                            </div>
+                            <div class="boundary-item">
+                                <i class="fas fa-arrow-down"></i>
+                                <strong>Selatan:</strong> Desa Maju Bersama
+                            </div>
+                            <div class="boundary-item">
+                                <i class="fas fa-arrow-left"></i>
+                                <strong>Barat:</strong> Desa Sejahtera
+                            </div>
+                            <div class="boundary-item">
+                                <i class="fas fa-arrow-right"></i>
+                                <strong>Timur:</strong> Desa Makmur
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UMKM Section -->
+        <section id="umkm" class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">UMKM Desa Sukamaju</h2>
+                <div class="umkm-content">
+                    <p class="intro-text">Mari mengenal dan dukung produk-produk unggulan dari masyarakat Desa Sukamaju! UMKM lokal kami merupakan wujud nyata semangat kewirausahaan dan kreativitas warga yang mengolah potensi alam dan kearifan lokal menjadi produk berkualitas. Dengan mendukung UMKM desa, kita tidak hanya memperoleh produk berkualitas, tetapi juga turut menggerakkan roda perekonomian masyarakat dan melestarikan budaya lokal. Setiap pembelian Anda adalah investasi untuk kemajuan ekonomi desa dan kesejahteraan bersama.</p>
+                    
+                    <div class="umkm-grid">
+                        <div class="umkm-card">
+                            <img src="assets/umkm-keripik.jpg" alt="Keripik Singkong Sukamaju" class="umkm-image">
+                            <div class="umkm-info">
+                                <h4>Keripik Singkong Sukamaju</h4>
+                                <p class="owner">Ibu Sari Mulyaningsih</p>
+                                <p class="description">Keripik singkong renyah dengan berbagai varian rasa tradisional dan modern</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-phone"></i> 0812-3456-7890
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="umkm-card">
+                            <img src="assets/umkm-batik.jpg" alt="Batik Motif Sukamaju" class="umkm-image">
+                            <div class="umkm-info">
+                                <h4>Batik Motif Sukamaju</h4>
+                                <p class="owner">Bapak Joko Susilo</p>
+                                <p class="description">Batik tulis dan cap dengan motif khas desa yang menggambarkan keindahan alam lokal</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-phone"></i> 0813-9876-5432
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="umkm-card">
+                            <img src="assets/umkm-madu.jpg" alt="Madu Hutan Sukamaju" class="umkm-image">
+                            <div class="umkm-info">
+                                <h4>Madu Hutan Sukamaju</h4>
+                                <p class="owner">Bapak Udin Setiawan</p>
+                                <p class="description">Madu murni dari hutan sekitar desa dengan kualitas premium dan manfaat kesehatan</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-phone"></i> 0815-2468-1357
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="umkm-card">
+                            <img src="assets/umkm-anyaman.jpg" alt="Anyaman Bambu Sukamaju" class="umkm-image">
+                            <div class="umkm-info">
+                                <h4>Anyaman Bambu Sukamaju</h4>
+                                <p class="owner">Ibu Ningsih Rahayu</p>
+                                <p class="description">Berbagai kerajinan anyaman bambu seperti tas, keranjang, dan hiasan rumah</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-phone"></i> 0814-7531-9642
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="umkm-card">
+                            <img src="assets/umkm-kopi.jpg" alt="Kopi Robusta Sukamaju" class="umkm-image">
+                            <div class="umkm-info">
+                                <h4>Kopi Robusta Sukamaju</h4>
+                                <p class="owner">Kelompok Tani Maju Sejahtera</p>
+                                <p class="description">Kopi robusta pilihan dengan aroma khas pegunungan dan cita rasa yang nikmat</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-phone"></i> 0816-8642-7539
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="umkm-card">
+                            <img src="assets/umkm-tempe.jpg" alt="Tempe Kedelai Organik" class="umkm-image">
+                            <div class="umkm-info">
+                                <h4>Tempe Kedelai Organik</h4>
+                                <p class="owner">Ibu Wati Suhartini</p>
+                                <p class="description">Tempe segar dari kedelai organik tanpa pengawet, diproduksi setiap hari</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-phone"></i> 0817-1357-2468
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Berita Section -->
+        <section id="berita" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Berita & Pengumuman</h2>
+                <div class="berita-content">
+                    <p class="intro-text">Halaman berita dan pengumuman ini merupakan pusat informasi terkini seputar kegiatan dan program-program yang sedang berlangsung di Desa Sukamaju. Melalui platform ini, masyarakat dapat mengakses informasi penting mengenai kebijakan desa, jadwal kegiatan, pengumuman resmi, serta update pelayanan publik. Kami berkomitmen untuk selalu memberikan informasi yang akurat, tepat waktu, dan bermanfaat bagi kemajuan bersama.</p>
+                    
+                    <div class="news-grid">
+                        <div class="news-card featured">
+                            <img src="assets/news-gotong-royong.jpg" alt="Gotong Royong Pembersihan Desa" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">15 Juli 2025</span>
+                                    <span class="news-category">Kegiatan</span>
+                                </div>
+                                <h3>Gotong Royong Bersih Desa Menyambut HUT RI ke-80</h3>
+                                <p>Seluruh warga Desa Sukamaju berpartisipasi dalam kegiatan gotong royong pembersihan lingkungan dalam rangka menyambut peringatan HUT Kemerdekaan RI ke-80...</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card">
+                            <img src="assets/news-bantuan-bpnt.jpg" alt="Penyaluran Bantuan BPNT" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">10 Juli 2025</span>
+                                    <span class="news-category">Pengumuman</span>
+                                </div>
+                                <h3>Jadwal Penyaluran Bantuan Pangan Non Tunai (BPNT) Bulan Juli</h3>
+                                <p>Pemerintah Desa mengumumkan jadwal penyaluran BPNT untuk penerima manfaat di Desa Sukamaju...</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card">
+                            <img src="assets/news-pelatihan-umkm.jpg" alt="Pelatihan UMKM" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">5 Juli 2025</span>
+                                    <span class="news-category">Program</span>
+                                </div>
+                                <h3>Pelatihan Pengembangan UMKM dan Digital Marketing</h3>
+                                <p>Dinas Koperasi bekerjasama dengan Pemerintah Desa menyelenggarakan pelatihan untuk pelaku UMKM...</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card">
+                            <img src="assets/news-pembangunan-jalan.jpg" alt="Pembangunan Jalan Desa" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">28 Juni 2025</span>
+                                    <span class="news-category">Pembangunan</span>
+                                </div>
+                                <h3>Progress Pembangunan Jalan Aspal RW 03 Mencapai 75%</h3>
+                                <p>Proyek pembangunan jalan aspal sepanjang 800 meter di RW 03 telah mencapai progress 75%...</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card">
+                            <img src="assets/news-posyandu.jpg" alt="Kegiatan Posyandu" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">20 Juni 2025</span>
+                                    <span class="news-category">Kesehatan</span>
+                                </div>
+                                <h3>Posyandu Rutin Bulan Juni dengan Tema Gizi Seimbang</h3>
+                                <p>Kegiatan Posyandu rutin dilaksanakan dengan fokus edukasi gizi seimbang untuk ibu dan anak...</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card">
+                            <img src="assets/news-musrenbangdes.jpg" alt="Musrenbangdes 2025" class="news-image">
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">15 Juni 2025</span>
+                                    <span class="news-category">Pemerintahan</span>
+                                </div>
+                                <h3>Musyawarah Rencana Pembangunan Desa (Musrenbangdes) 2026</h3>
+                                <p>Kegiatan Musrenbangdes dihadiri perwakilan masyarakat untuk merumuskan program pembangunan tahun 2026...</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Section -->
+        <section id="galeri" class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Galeri Desa Sukamaju</h2>
+                <div class="galeri-content">
+                    <p class="intro-text">Galeri Desa Sukamaju menyajikan dokumentasi visual yang mengabadikan berbagai momen berharga dalam perjalanan pembangunan dan kehidupan masyarakat desa. Mulai dari kegiatan gotong royong, pembangunan infrastruktur, potensi alam yang memukau, hingga momen kebersamaan warga dalam berbagai acara. Setiap foto dalam galeri ini merupakan cermin dari semangat kebersamaan, kemajuan, dan keindahan Desa Sukamaju yang terus berkembang menuju masa depan yang lebih baik.</p>
+                    
+                    <div class="gallery-tabs">
+                        <button class="tab-btn active" data-tab="semua">Semua Foto</button>
+                        <button class="tab-btn" data-tab="kegiatan">Kegiatan</button>
+                        <button class="tab-btn" data-tab="pembangunan">Pembangunan</button>
+                        <button class="tab-btn" data-tab="alam">Alam</button>
+                        <button class="tab-btn" data-tab="budaya">Budaya</button>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <div class="gallery-item" data-category="kegiatan">
+                            <img src="assets/galeri-gotong-royong.jpg" alt="Gotong Royong Warga" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Gotong Royong Warga</h4>
+                                <p>Kegiatan gotong royong pembersihan lingkungan</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="pembangunan">
+                            <img src="assets/galeri-jalan-baru.jpg" alt="Pembangunan Jalan" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Pembangunan Jalan Aspal</h4>
+                                <p>Progress pembangunan infrastruktur jalan</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="alam">
+                            <img src="assets/galeri-sawah.jpg" alt="Hamparan Sawah" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Hamparan Sawah Hijau</h4>
+                                <p>Keindahan alam persawahan desa</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="budaya">
+                            <img src="assets/galeri-pengajian.jpg" alt="Kegiatan Pengajian" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Pengajian Rutin Warga</h4>
+                                <p>Kegiatan keagamaan masyarakat</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="kegiatan">
+                            <img src="assets/galeri-posyandu.jpg" alt="Kegiatan Posyandu" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Posyandu Balita</h4>
+                                <p>Kegiatan kesehatan ibu dan anak</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="pembangunan">
+                            <img src="assets/galeri-kantor-baru.jpg" alt="Kantor Desa" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Kantor Desa Baru</h4>
+                                <p>Fasilitas pelayanan publik</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="alam">
+                            <img src="assets/galeri-sungai.jpg" alt="Sungai Jernih" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Sungai Jernih</h4>
+                                <p>Sumber air bersih alami desa</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="budaya">
+                            <img src="assets/galeri-17an.jpg" alt="Perayaan 17 Agustus" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Perayaan HUT RI</h4>
+                                <p>Kemeriahan lomba 17 Agustus</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="kegiatan">
+                            <img src="assets/galeri-umkm.jpg" alt="Pameran UMKM" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h4>Pameran UMKM Desa</h4>
+                                <p>Showcase produk lokal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan Publik -->
+        <section id="layanan-publik" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Layanan Publik & Surat Online</h2>
+                <div class="layanan-content">
+                    <p class="intro-text">Layanan publik berbasis digital merupakan komitmen Pemerintah Desa Sukamaju dalam memberikan kemudahan akses layanan administratif kepada masyarakat. Melalui sistem online yang terintegrasi, warga dapat mengajukan berbagai jenis surat keterangan tanpa harus datang berkali-kali ke kantor desa. Semangat efisiensi, transparansi, dan pelayanan cepat menjadi landasan kami dalam menghadirkan layanan publik yang berkualitas. Sistem ini dirancang untuk menghemat waktu masyarakat sekaligus meningkatkan kualitas pelayanan pemerintah desa.</p>
+                    
+                    <div class="layanan-grid">
+                        <div class="layanan-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Surat Keterangan Domisili</h3>
+                            <p>Surat keterangan tempat tinggal untuk berbagai keperluan administrasi</p>
+                            <div class="layanan-info">
+                                <span class="waktu"><i class="fas fa-clock"></i> 2-3 Hari</span>
+                                <span class="biaya"><i class="fas fa-money-bill"></i> Gratis</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ajukan Online</a>
+                        </div>
+
+                        <div class="layanan-card">
+                            <i class="fas fa-user-check"></i>
+                            <h3>Surat Keterangan Belum Menikah</h3>
+                            <p>Surat keterangan status pernikahan untuk keperluan menikah</p>
+                            <div class="layanan-info">
+                                <span class="waktu"><i class="fas fa-clock"></i> 1-2 Hari</span>
+                                <span class="biaya"><i class="fas fa-money-bill"></i> Gratis</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ajukan Online</a>
+                        </div>
+
+                        <div class="layanan-card">
+                            <i class="fas fa-heart"></i>
+                            <h3>Surat Keterangan Tidak Mampu</h3>
+                            <p>Surat untuk keperluan bantuan sosial, beasiswa, atau keringanan biaya</p>
+                            <div class="layanan-info">
+                                <span class="waktu"><i class="fas fa-clock"></i> 2-3 Hari</span>
+                                <span class="biaya"><i class="fas fa-money-bill"></i> Gratis</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ajukan Online</a>
+                        </div>
+
+                        <div class="layanan-card">
+                            <i class="fas fa-building"></i>
+                            <h3>Surat Keterangan Usaha</h3>
+                            <p>Surat keterangan untuk keperluan administrasi usaha atau UMKM</p>
+                            <div class="layanan-info">
+                                <span class="waktu"><i class="fas fa-clock"></i> 3-4 Hari</span>
+                                <span class="biaya"><i class="fas fa-money-bill"></i> Rp 5.000</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ajukan Online</a>
+                        </div>
+
+                        <div class="layanan-card">
+                            <i class="fas fa-home"></i>
+                            <h3>Surat Keterangan Kepemilikan Tanah</h3>
+                            <p>Surat keterangan kepemilikan tanah untuk berbagai keperluan</p>
+                            <div class="layanan-info">
+                                <span class="waktu"><i class="fas fa-clock"></i> 5-7 Hari</span>
+                                <span class="biaya"><i class="fas fa-money-bill"></i> Rp 10.000</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ajukan Online</a>
+                        </div>
+
+                        <div class="layanan-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Surat Keterangan Pelajar</h3>
+                            <p>Surat keterangan untuk keperluan administrasi sekolah atau kuliah</p>
+                            <div class="layanan-info">
+                                <span class="waktu"><i class="fas fa-clock"></i> 1-2 Hari</span>
+                                <span class="biaya"><i class="fas fa-money-bill"></i> Gratis</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ajukan Online</a>
+                        </div>
+                    </div>
+
+                    <div class="syarat-ketentuan">
+                        <h3>Syarat & Ketentuan Umum</h3>
+                        <ul>
+                            <li>Pemohon harus merupakan warga Desa Sukamaju</li>
+                            <li>Melampirkan fotokopi KTP yang masih berlaku</li>
+                            <li>Melampirkan fotokopi Kartu Keluarga</li>
+                            <li>Mengisi formulir permohonan dengan lengkap dan benar</li>
+                            <li>Untuk surat berbayar, harap siapkan uang pas saat pengambilan</li>
+                            <li>Surat dapat diambil sesuai waktu yang telah ditentukan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APBDes -->
+        <section id="apbdes" class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">APBDes (Anggaran Pendapatan & Belanja Desa)</h2>
+                <div class="apbdes-content">
+                    <p class="intro-text">Transparansi anggaran merupakan salah satu pilar utama dalam penyelenggaraan pemerintahan desa yang baik dan akuntabel. Pemerintah Desa Sukamaju berkomitmen untuk memberikan keterbukaan informasi keuangan desa kepada seluruh masyarakat. Melalui publikasi APBDes ini, kami ingin menunjukkan bahwa setiap rupiah anggaran desa dikelola dengan penuh tanggung jawab untuk kemajuan dan kesejahteraan bersama. Hal ini merupakan bentuk akuntabilitas pemerintah desa dalam menjalankan amanah masyarakat.</p>
+                    
+                    <div class="apbdes-summary">
+                        <div class="apbdes-card pendapatan">
+                            <h3><i class="fas fa-arrow-down"></i> Total Pendapatan</h3>
+                            <div class="amount">Rp 1.850.000.000</div>
+                            <p>Tahun Anggaran 2025</p>
+                        </div>
+                        <div class="apbdes-card belanja">
+                            <h3><i class="fas fa-arrow-up"></i> Total Belanja</h3>
+                            <div class="amount">Rp 1.825.000.000</div>
+                            <p>Tahun Anggaran 2025</p>
+                        </div>
+                        <div class="apbdes-card saldo">
+                            <h3><i class="fas fa-wallet"></i> Surplus</h3>
+                            <div class="amount">Rp 25.000.000</div>
+                            <p>Saldo Lebih</p>
+                        </div>
+                    </div>
+
+                    <div class="apbdes-detail">
+                        <div class="pendapatan-section">
+                            <h3>Rincian Pendapatan</h3>
+                            <div class="budget-items">
+                                <div class="budget-item">
+                                    <span class="item-name">Dana Desa (DD)</span>
+                                    <span class="item-amount">Rp 950.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 51.4%"></div>
+                                        </div>
+                                        <span>51.4%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Alokasi Dana Desa (ADD)</span>
+                                    <span class="item-amount">Rp 425.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 23%"></div>
+                                        </div>
+                                        <span>23%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Bantuan Keuangan Provinsi</span>
+                                    <span class="item-amount">Rp 200.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 10.8%"></div>
+                                        </div>
+                                        <span>10.8%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Pendapatan Asli Desa (PADes)</span>
+                                    <span class="item-amount">Rp 150.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 8.1%"></div>
+                                        </div>
+                                        <span>8.1%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Bantuan Keuangan Kabupaten</span>
+                                    <span class="item-amount">Rp 125.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 6.7%"></div>
+                                        </div>
+                                        <span>6.7%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="belanja-section">
+                            <h3>Rincian Belanja</h3>
+                            <div class="budget-items">
+                                <div class="budget-item">
+                                    <span class="item-name">Belanja Pembangunan</span>
+                                    <span class="item-amount">Rp 975.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 53.4%"></div>
+                                        </div>
+                                        <span>53.4%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Belanja Operasional</span>
+                                    <span class="item-amount">Rp 485.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 26.6%"></div>
+                                        </div>
+                                        <span>26.6%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Belanja Pemberdayaan</span>
+                                    <span class="item-amount">Rp 225.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 12.3%"></div>
+                                        </div>
+                                        <span>12.3%</span>
+                                    </div>
+                                </div>
+                                <div class="budget-item">
+                                    <span class="item-name">Belanja Tak Terduga</span>
+                                    <span class="item-amount">Rp 140.000.000</span>
+                                    <div class="item-percentage">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 7.7%"></div>
+                                        </div>
+                                        <span>7.7%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PPID -->
+        <section id="ppid" class="content-section">
+            <div class="container">
+                <h2 class="section-title">PPID (Pejabat Pengelola Informasi Desa)</h2>
+                <div class="ppid-content">
+                    <p class="intro-text">Pejabat Pengelola Informasi Desa (PPID) berperan penting dalam memastikan keterbukaan informasi publik di tingkat desa sesuai dengan amanah Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik. PPID Desa Sukamaju hadir untuk menjamin hak masyarakat dalam mengakses informasi publik yang akurat, lengkap, dan dapat dipertanggungjawabkan. Melalui layanan PPID, setiap warga berhak memperoleh informasi mengenai penyelenggaraan pemerintahan desa, dokumen kebijakan, dan data publik lainnya secara transparan dan mudah diakses.</p>
+                    
+                    <div class="ppid-info">
+                        <div class="ppid-card">
+                            <h3><i class="fas fa-user-tie"></i> Pejabat PPID</h3>
+                            <div class="officer-info">
+                                <img src="assets/ppid-officer.jpg" alt="PPID Officer" class="officer-photo">
+                                <div class="officer-details">
+                                    <h4>Drs. Bambang Sutrisno</h4>
+                                    <p class="position">Sekretaris Desa / PPID</p>
+                                    <p class="contact">
+                                        <i class="fas fa-phone"></i> (0263) 123-4567<br>
+                                        <i class="fas fa-envelope"></i> ppid@sukamaju.desa.id
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-categories">
+                            <h3>Kategori Informasi Publik</h3>
+                            <div class="category-grid">
+                                <div class="category-item">
+                                    <i class="fas fa-eye"></i>
+                                    <h4>Informasi Berkala</h4>
+                                    <p>Informasi yang wajib disediakan dan diumumkan secara berkala</p>
+                                    <ul>
+                                        <li>Profil Desa</li>
+                                        <li>APBDes</li>
+                                        <li>Peraturan Desa</li>
+                                        <li>Laporan Keuangan</li>
+                                    </ul>
+                                </div>
+
+                                <div class="category-item">
+                                    <i class="fas fa-hand-paper"></i>
+                                    <h4>Informasi Serta Merta</h4>
+                                    <p>Informasi yang wajib diumumkan tanpa penundaan</p>
+                                    <ul>
+                                        <li>Informasi Bencana</li>
+                                        <li>Informasi Keadaan Darurat</li>
+                                        <li>Informasi Gangguan Utilitas</li>
+                                        <li>Informasi Kesehatan Masyarakat</li>
+                                    </ul>
+                                </div>
+
+                                <div class="category-item">
+                                    <i class="fas fa-search"></i>
+                                    <h4>Informasi Setiap Saat</h4>
+                                    <p>Informasi yang wajib disediakan setiap saat</p>
+                                    <ul>
+                                        <li>Daftar Informasi Publik</li>
+                                        <li>Hasil Keputusan Desa</li>
+                                        <li>Prosedur Pelayanan</li>
+                                        <li>Laporan Akses Informasi</li>
+                                    </ul>
+                                </div>
+
+                                <div class="category-item">
+                                    <i class="fas fa-lock"></i>
+                                    <h4>Informasi Dikecualikan</h4>
+                                    <p>Informasi yang tidak dapat diakses publik</p>
+                                    <ul>
+                                        <li>Data Pribadi Warga</li>
+                                        <li>Informasi Keamanan</li>
+                                        <li>Rahasia Jabatan</li>
+                                        <li>Informasi Yang Dikecualikan UU</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ppid-services">
+                        <h3>Layanan PPID</h3>
+                        <div class="services-list">
+                            <div class="service-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Permohonan Informasi</h4>
+                                    <p>Ajukan permohonan informasi secara tertulis atau online</p>
+                                </div>
+                            </div>
+                            <div class="service-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Verifikasi Permohonan</h4>
+                                    <p>PPID melakukan verifikasi dan klasifikasi informasi yang diminta</p>
+                                </div>
+                            </div>
+                            <div class="service-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Penyediaan Informasi</h4>
+                                    <p>Informasi disediakan sesuai ketentuan dalam jangka waktu maksimal 10 hari kerja</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ppid-contact">
+                            <h4>Cara Mengajukan Permohonan Informasi</h4>
+                            <div class="contact-methods">
+                                <div class="contact-item">
+                                    <i class="fas fa-building"></i>
+                                    <strong>Datang Langsung</strong>
+                                    <p>Kantor Desa Sukamaju<br>Jl. Raya Sukamaju No. 123</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <strong>Email</strong>
+                                    <p>ppid@sukamaju.desa.id</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <strong>Telepon</strong>
+                                    <p>(0263) 123-4567</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-globe"></i>
+                                    <strong>Online</strong>
+                                    <p>Form permohonan di website</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="content-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Kontak & Kritik/Saran</h2>
+                <div class="kontak-content">
+                    <p class="intro-text">Kami mengundang seluruh warga Desa Sukamaju dan masyarakat umum untuk aktif menyampaikan kritik, saran, pertanyaan, atau aspirasi kepada pemerintah desa. Setiap masukan dari Anda sangat berharga bagi kami dalam upaya meningkatkan kualitas pelayanan dan pembangunan desa. Pemerintah Desa Sukamaju berkomitmen untuk selalu terbuka menerima aspirasi masyarakat dan merespons setiap komunikasi dengan penuh tanggung jawab. Mari bersama-sama membangun Desa Sukamaju yang lebih baik melalui komunikasi yang konstruktif dan partisipatif.</p>
+                    
+                    <div class="kontak-grid">
+                        <div class="kontak-info">
+                            <h3>Informasi Kontak</h3>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Alamat</strong>
+                                        <p>Jl. Raya Sukamaju No. 123<br>Desa Sukamaju, Kec. Maju Jaya<br>Kabupaten Bahagia, Jawa Barat 16710</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>Telepon</strong>
+                                        <p>(0263) 123-4567</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-fax"></i>
+                                    <div>
+                                        <strong>Fax</strong>
+                                        <p>(0263) 123-4568</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <p>info@sukamaju.desa.id<br>kepala@sukamaju.desa.id</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <strong>Jam Layanan</strong>
+                                        <p>Senin - Jumat: 08.00 - 16.00 WIB<br>Sabtu: 08.00 - 12.00 WIB<br>Minggu: Libur</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-media">
+                                <h4>Media Sosial</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link facebook">
+                                        <i class="fab fa-facebook"></i>
+                                        <span>Desa Sukamaju</span>
+                                    </a>
+                                    <a href="#" class="social-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>@desa_sukamaju</span>
+                                    </a>
+                                    <a href="#" class="social-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>Desa Sukamaju TV</span>
+                                    </a>
+                                    <a href="#" class="social-link whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>0812-1234-5678</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kontak-form">
+                            <h3>Form Kritik & Saran</h3>
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="nama">Nama Lengkap *</label>
+                                    <input type="text" id="nama" name="nama" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telepon">No. Telepon</label>
+                                    <input type="tel" id="telepon" name="telepon">
+                                </div>
+                                <div class="form-group">
+                                    <label for="kategori">Kategori</label>
+                                    <select id="kategori" name="kategori" required>
+                                        <option value="">Pilih Kategori</option>
+                                        <option value="kritik">Kritik</option>
+                                        <option value="saran">Saran</option>
+                                        <option value="pertanyaan">Pertanyaan</option>
+                                        <option value="pengaduan">Pengaduan</option>
+                                        <option value="aspirasi">Aspirasi</option>
+                                        <option value="lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subjek">Subjek *</label>
+                                    <input type="text" id="subjek" name="subjek" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pesan">Pesan *</label>
+                                    <textarea id="pesan" name="pesan" rows="6" required placeholder="Tuliskan kritik, saran, atau pesan Anda..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="map-section">
+                        <h3>Lokasi Kantor Desa</h3>
+                        <div class="map-container">
+                            <img src="assets/peta-lokasi.jpg" alt="Peta Lokasi Kantor Desa Sukamaju" class="location-map">
+                            <div class="map-overlay">
+                                <p>Klik untuk membuka di Google Maps</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-desa.png" alt="Logo Desa Sukamaju" class="footer-logo-img">
+                        <div>
+                            <h3>Desa Sukamaju</h3>
+                            <p>Maju Bersama Menuju Sejahtera</p>
+                        </div>
+                    </div>
+                    <p>Website resmi Pemerintah Desa Sukamaju yang menyediakan informasi dan layanan publik berbasis digital untuk kemudahan masyarakat.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Menu Utama</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#profil-desa">Profil Desa</a></li>
+                        <li><a href="#berita">Berita & Info</a></li>
+                        <li><a href="#layanan-publik">Layanan Publik</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#layanan-publik">Surat Online</a></li>
+                        <li><a href="#data-statistik">Data Desa</a></li>
+                        <li><a href="#umkm">UMKM Desa</a></li>
+                        <li><a href="#ppid">PPID</a></li>
+                        <li><a href="#apbdes">APBDes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Kontak Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Sukamaju No. 123, Desa Sukamaju</p>
+                        <p><i class="fas fa-phone"></i> (0263) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@sukamaju.desa.id</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Pemerintah Desa Sukamaju. Hak Cipta Dilindungi.</p>
+                    <div class="footer-links">
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <div class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
