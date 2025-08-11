@@ -732,11 +732,12 @@ body {
 
 .boundary-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
 }
 
 .boundary-item {
+    font-size: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -747,13 +748,13 @@ body {
 }
 
 .boundary-item i {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #3498db;
 }
 
 .boundary-item strong {
     color: #2c3e50;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
 }
 
 /* UMKM Section */
