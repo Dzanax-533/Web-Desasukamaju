@@ -2160,3 +2160,802 @@ body {
     cursor: pointer;
     margin-left: 1rem;
 }
+
+/* Infografis Page Styles */
+.infografis-hero {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 1rem 0 1rem;
+    margin-top: 0.5px;
+    text-align: left;
+}
+
+.infografis-hero .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.infografis-hero .hero-title span {
+    color: #f39c12;
+}
+
+.infografis-hero .hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Navigation Tabs */
+.infografis-nav {
+    background: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: static;
+    top: 90px;
+    z-index: 100;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+    background: white;
+    border: 2px solid #2980b9;
+    border-radius: 15px;
+    color: #3498db;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.nav-tab:hover,
+.nav-tab.active {
+    background: #3498db;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0,2.5);
+}
+
+.nav-tab i {
+    font-size: 2rem;
+}
+
+.nav-tab span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Tab Content */
+.infografis-content {
+    padding: 4rem 0;
+    min-height: 60vh;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Penduduk Tab Styles */
+.penduduk-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card-large {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 15px 35px rgba(52, 152, 219, 0.3);
+    grid-column: span 2;
+}
+
+.stat-icon {
+    font-size: 4rem;
+    opacity: 0.9;
+}
+
+.stat-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.stat-info p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Demographic Breakdown */
+.demographic-breakdown {
+    display: flex;
+    gap: 2rem;
+}
+
+.breakdown-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.breakdown-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.breakdown-icon.male {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.breakdown-icon.female {
+    background: linear-gradient(135deg, #e91e63, #c2185b);
+}
+
+.breakdown-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.breakdown-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+}
+
+.breakdown-percentage {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 600;
+}
+
+/* Age Distribution Chart */
+.age-distribution-chart {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.age-distribution-chart h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.age-groups {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 300px;
+    gap: 2rem;
+}
+
+.age-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.age-bar {
+    width: 80px;
+    background: linear-gradient(to top, #e74c3c, #c0392b);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    transition: height 1s ease;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.age-percentage {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.age-label {
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.age-count {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* KK Info */
+.kk-info {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.kk-card {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(46, 204, 113, 0.3);
+    min-width: 300px;
+}
+
+.kk-card i {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.kk-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.kk-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* APBDes Tab Styles */
+.apbdes-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.apbdes-card-info {
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.apbdes-card-info.pendapatan {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.apbdes-card-info.belanja {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.apbdes-card-info.surplus {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.apbdes-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.apbdes-card-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.apbdes-amount {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Budget Breakdown */
+.budget-breakdown {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.budget-section h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.budget-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.budget-item-chart {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.budget-bar {
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 200px;
+}
+
+.budget-amount {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    min-width: 150px;
+}
+
+/* Stunting Tab Styles */
+.stunting-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stunting-card {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(231, 76, 60, 0.3);
+}
+
+.stunting-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.stunting-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.stunting-percentage {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stunting-stats {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.stunting-stat {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border-left: 5px solid #3498db;
+}
+
+.stunting-stat h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.stat-value.stunting-count {
+    color: #e74c3c;
+}
+
+.stat-value.target {
+    color: #2ecc71;
+}
+
+/* Bansos Tab Styles */
+.bansos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bansos-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.bansos-card:hover {
+    transform: translateY(-10px);
+}
+
+.bansos-icon {
+    font-size: 4rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.bansos-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.bansos-count {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+}
+
+/* IDM Tab Styles */
+.idm-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.idm-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.idm-circle {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #3498db;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.idm-percentage {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.idm-circle p {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.idm-status {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.idm-status.berkembang {
+    border-top: 5px solid #f39c12;
+}
+
+.idm-status h3 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 0.5rem;
+}
+
+.idm-components {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.idm-component {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.idm-component h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.component-score {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.component-bar {
+    width: 100%;
+    height: 15px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.component-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+/* SDGs Tab Styles */
+.sdgs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sdgs-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.sdgs-card:hover {
+    transform: translateY(-5px);
+}
+
+.sdgs-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.sdgs-icon.poverty { background: #e5243b; }
+.sdgs-icon.hunger { background: #dda63a; }
+.sdgs-icon.health { background: #4c9f38; }
+.sdgs-icon.education { background: #c5192d; }
+.sdgs-icon.water { background: #26bde2; }
+.sdgs-icon.energy { background: #fcc30b; }
+
+.sdgs-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.sdgs-progress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar-sdgs {
+    flex: 1;
+    height: 15px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.sdgs-progress span {
+    font-weight: 700;
+    color: #2c3e50;
+    min-width: 50px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .penduduk-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-card-large {
+        grid-column: span 1;
+    }
+    
+    .demographic-breakdown {
+        flex-direction: column;
+    }
+    
+    .idm-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .stunting-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-tabs {
+        gap: 0.5rem;
+    }
+    
+    .nav-tab {
+        min-width: 100px;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .infografis-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .nav-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-tab {
+        flex-direction: row;
+        min-width: 200px;
+        justify-content: center;
+    }
+    
+    .age-groups {
+        height: 200px;
+        gap: 1rem;
+    }
+    
+    .age-bar {
+        width: 60px;
+    }
+    
+    .apbdes-summary-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bansos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sdgs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .budget-item-chart {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .budget-bar {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .infografis-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .infografis-hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .stat-card-large {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .breakdown-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .breakdown-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .age-groups {
+        height: 150px;
+    }
+    
+    .age-bar {
+        width: 40px;
+    }
+    
+    .idm-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .idm-percentage {
+        font-size: 2.5rem;
+    }
+}
