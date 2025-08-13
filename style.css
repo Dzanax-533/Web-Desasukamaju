@@ -245,60 +245,167 @@ body {
     flex-wrap: wrap;
 }
 
-/* Quick Services */
-.quick-services {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-}
+/* Jelajah Desa */
+        .explore-services {
+            background-color: #fff; /* White background for the section */
+            padding: 50px 0;
+        }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 2rem;
-}
+        .explore-services .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 40px; /* Space between text and cards */
+        }
 
-.service-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border-top: 4px solid #3498db;
-}
+        /* --- Left Column: Text Content --- */
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}
+        .section-intro {
+            flex: 1 1 35%; /* Takes up about 35% of the width */
+        }
 
-.service-card i {
-    font-size: 3rem;
-    color: #3498db;
-    margin-bottom: 1.5rem;
-}
+        .section-intro h2 {
+            font-size: 2.5rem; /* Large font size for the title */
+            color: #2c3e50; /* Red color from the image's header */
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
 
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
+        .section-intro p {
+            font-size: 1rem;
+            color: #6c757d; /* Soft grey for the paragraph text */
+            line-height: 1.6;
+        }
+        
+        /* --- Right Column: Service Cards Grid --- */
 
-.service-card p {
-    margin-bottom: 1.5rem;
-    color: #666;
-}
+        .services-grid {
+            flex: 1 1 60%; /* Takes up about 60% of the width */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+            grid-template-rows: repeat(2, 1fr);
+            gap: 25px; /* Space between the cards */
+        }
 
-.service-link {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
+        .service-card {
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none; /* Remove underline from links */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            min-height: 180px; /* Ensures all cards are the same height */
+        }
 
-.service-link:hover {
-    color: #2980b9;
-}
+        .service-card:hover {
+            transform: translateY(-5px); /* Lifts the card on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Adds shadow on hover */
+        }
+
+        .service-card i {
+            font-size: 4rem; /* Large icons */
+            color: #3498db;  /* Green icon color from the image */
+            margin-bottom: 20px; /* Space between icon and text */
+        }
+
+        .service-card .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #343a40; /* Dark color for the title */
+        }
+
+/* --- Bagian Utama Sambutan --- */
+        .welcome-section {
+            padding: 80px;
+        }
+
+        .welcome-section .container {
+            display: flex;
+            align-items: center; /* Membuat logo dan teks sejajar secara vertikal */
+            gap: 100px; /* Jarak antara logo dan kolom teks */
+        }
+
+        /* --- Kolom Kiri: Logo --- */
+        .welcome-emblem {
+            flex-shrink: 0; /* Mencegah logo menyusut */
+        }
+
+        .welcome-emblem img {
+            width: 300px; /* Ukuran logo */
+            height: auto;
+            filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.1)); /* Memberi efek bayangan halus */
+        }
+
+        /* --- Kolom Kanan: Teks Sambutan --- */
+        .welcome-text {
+            flex-grow: 1; /* Memastikan kolom teks mengisi sisa ruang */
+        }
+
+        .welcome-text .subtitle {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #34495e; /* Warna merah seperti di gambar */
+            margin-bottom: 1px;
+        }
+
+        .welcome-text .name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #212529; /* Hitam pekat */
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .welcome-text .title {
+            font-size: 1rem;
+            color: #6c757d; /* Abu-abu untuk jabatan */
+            margin-top: 1px;
+            margin-bottom: 10px;
+        }
+
+        .welcome-message {
+            position: relative; /* Diperlukan untuk garis vertikal */
+            padding-right: 25px; /* Memberi ruang untuk garis */
+        }
+
+        .welcome-message p {
+            max-height: 200px;
+            overflow-y: auto;
+            padding-right: 15px;
+            font-size: 1rem;
+            line-height: 1.7; /* Jarak antar baris agar mudah dibaca */
+            color: #495057; /* Warna teks paragraf */
+            text-align: justify;
+            margin: 0;
+        }
+        
+        .welcome-message p strong {
+            display: block; /* Membuat salam menjadi satu baris sendiri */
+            margin-bottom: 8px;
+            margin-top: 10px;
+        }
+
+        /* --- Penyesuaian untuk Layar Kecil (Mobile) --- */
+        @media (max-width: 768px) {
+            .welcome-section .container {
+                flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+                text-align: center; /* Teks menjadi rata tengah */
+            }
+            .welcome-message {
+                padding-right: 0; /* Hapus padding */
+                text-align: left; /* Kembalikan perataan teks paragraf */
+            }
+            .welcome-message::after {
+                display: none; /* Sembunyikan garis vertikal di layar kecil */
+            }
+        }
 
 /* Content Sections */
 .content-section {
@@ -732,11 +839,12 @@ body {
 
 .boundary-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
 }
 
 .boundary-item {
+    font-size: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -747,13 +855,13 @@ body {
 }
 
 .boundary-item i {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #3498db;
 }
 
 .boundary-item strong {
     color: #2c3e50;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
 }
 
 /* UMKM Section */
