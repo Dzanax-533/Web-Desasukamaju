@@ -282,7 +282,7 @@ body {
         /* --- Right Column: Service Cards Grid --- */
 
         .services-grid {
-            flex: 1 1 60%; /* Takes up about 60% of the width */
+            flex: 1 1 40%; /* Takes up about 60% of the width */
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
             grid-template-rows: repeat(2, 1fr);
@@ -404,6 +404,144 @@ body {
             }
             .welcome-message::after {
                 display: none; /* Sembunyikan garis vertikal di layar kecil */
+            }
+        }
+
+/* STOK */
+ /* --- Section & Container --- */
+        .structure-section {
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        /* --- Judul Section --- */
+        .structure-header {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .structure-header__main-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #0d6efd; /* Warna Biru Utama */
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .structure-header__subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 0px 0 0 0;
+        }
+
+        /* --- Grid untuk Semua Kartu Pejabat --- */
+        .structure-grid {
+            display: grid;
+            gap: 25px; /* Default: 4 kolom untuk layar besar */
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        /* --- Kartu Profil Pejabat --- */
+        .official-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .official-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .official-card__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            background-color: #ccc; /* Fallback jika gambar tidak ada */
+        }
+
+        .official-card__info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px;
+            box-sizing: border-box;
+            background: #0d6efd; /* Latar belakang biru untuk info */
+            color: white;
+            text-align: center;
+        }
+        
+        .official-card__name {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .official-card__title {
+            margin: 4px 0 0 0;
+            font-size: 0.85rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        /* --- Footer dengan Link --- */
+        .structure-footer {
+            text-align: right;
+            margin-top: 20px;
+        }
+        
+        .structure-footer__view-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #343a40;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .structure-footer__view-more:hover {
+            background-color: #ced4da;
+        }
+
+        /* --- CSS Responsif --- */
+        
+        /* Layar Laptop Kecil / Tablet Besar */
+        @media (max-width: 1200px) {
+            .structure-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Tablet */
+        @media (max-width: 768px) {
+            .structure-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .structure-header__main-title {
+                font-size: 2.2rem;
+            }
+            .structure-header__subtitle {
+                font-size: 1rem;
+            }
+        }
+        
+        /* Ponsel */
+        @media (max-width: 576px) {
+            .structure-grid {
+                grid-template-columns: 1fr;
+            }
+            .structure-footer {
+                text-align: center; /* Tombol menjadi di tengah */
             }
         }
 
