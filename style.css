@@ -214,7 +214,7 @@ body {
 .hero-title {
     font-size: 3.5rem;
     line-height: 110%;
-    margin-top: 14%;
+    margin-top: 10%;
     font-weight: 700;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -919,35 +919,6 @@ body {
 
 .map-container:hover .map-overlay {
     opacity: 1;
-}
-
-.map-legend {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-top: 2rem;
-}
-
-.map-legend h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #2c3e50;
-    text-align: center;
-}
-
-.map-legend ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.map-legend li {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.5rem;
 }
 
 .legend-dot {
@@ -1850,6 +1821,7 @@ body {
 .footer-section h4 {
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
+    
     color: #3498db;
 }
 
@@ -3205,3 +3177,244 @@ body {
         font-size: 2.5rem;
     }
 }
+
+        /* --- Kontainer Utama --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Judul & Sub-judul Halaman --- */
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .page-header .title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #c42727; /* Merah */
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 5px 0 0 0;
+        }
+        .page-header .subtitle strong em {
+            color: #c42727;
+        }
+
+        /* --- Bagian Utama Kontainer Peta --- */
+        .map-container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* --- Toolbar di Atas Peta --- */
+        .map-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .search-input {
+            padding: 10px 15px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 1rem;
+            min-width: 250px;
+        }
+
+        .filter-select {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #fff;
+            min-width: 200px;
+        }
+        
+        /* --- Kontainer untuk Iframe agar Responsif --- */
+        .map-embed-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 60%; /* Aspect Ratio 16:9. Sesuaikan jika perlu (misal: 75% untuk 4:3) */
+            border-radius: 8px;
+        }
+
+        .map-embed-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Berita */
+        .news-section {
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Grid untuk Kartu Berita */
+        .news-grid {
+            display: grid;
+            gap: 30px;
+            margin: auto;
+            /* Default 3 kolom untuk layar besar */
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Styling Kartu Berita */
+        .news-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gambar pada Kartu */
+        .card-image-container {
+            overflow: hidden;
+            height: 220px;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .news-card:hover .card-image {
+            transform: scale(1.05);
+        }
+
+        /* Konten Teks pada Kartu */
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .card-title {
+            margin: 0 0 10px 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .card-title a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s;
+        }
+
+        .card-title a:hover {
+            color: #c42727; /* Warna merah seperti di header */
+        }
+
+        .card-excerpt {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+            flex-grow: 1; /* Mendorong meta ke bawah */
+        }
+
+        .card-meta i {
+            margin-right: 6px;
+        }
+
+        /* Tanggal di Pojok Kartu */
+        .card-date {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-color: #DC3545;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .date-day {
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        .date-month-year {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            gap: 5px;
+        }
+        .pagination a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .pagination a:hover {
+            background-color: #c42727;
+            color: white;
+            border-color: #c42727;
+        }
+        .pagination a.active {
+            background-color: #c42727;
+            color: white;
+            border-color: #c42727;
+        }
+
+
+        /* Aturan Responsif */
+        /* Tablet */
+        @media (max-width: 992px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Ponsel */
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }

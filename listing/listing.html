@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desa Sukamaju</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/logo-desa.png">
+    <link rel="icon" type="image/png" href="../assets/logo-desa.png">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo-section">
-                <img src="assets/logo-desa.png" alt="Logo Desa Sukamaju" class="logo">
+                <img src="../assets/logo-desa.png" alt="Logo Desa Sukamaju" class="logo">
                 <div class="title-section">
                     <h1>Desa Sukamaju</h1>
                     <p>Kecamatan Cibeber, Kabupaten Cianjur</p>
@@ -22,20 +22,20 @@
             <nav class="nav-menu">
                 <ul>
                     <li>
-                        <a href="index.html" class="nav-link active">Beranda</a>
+                        <a href="../index.html" class="nav-link">Beranda</a>
                     </li>
                     <li>
-                        <a href="profil-desa.html" class="nav-link">Profil Desa</a>
+                        <a href="../profil-desa/profil-desa.html" class="nav-link">Profil Desa</a>
                     </li>
                     <li>
-                        <a href="infografis.html" class="nav-link">Infografis</a>
+                        <a href="../infografis/infografis.html" class="nav-link">Infografis</a>
                     </li>
-                    <li><a href="#umkm" class="nav-link">Listing</a></li>
-                    <li><a href="#galeri" class="nav-link">Berita</a></li>
+                    <li><a href="#" class="nav-link active">Listing</a></li>
+                    <li><a href="../news/berita.html" class="nav-link">Berita</a></li>
                     <li>
-                        <a href="#layanan" class="nav-link">Belanja</a>
+                        <a href="../belanja/belanja.html" class="nav-link">Belanja</a>
                     </li>
-                    <li><a href="#kontak" class="nav-link">PPID</a></li>
+                    <li><a href="" class="nav-link">PPID</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,10 +43,42 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Beranda Section -->
-        <section id="beranda" class="hero-section">
+                <!-- Peta Desa -->
+        <section id="infografis" class="content-section">
+            <div class="container">
+        
+        <div class="page-header">
+            <h1 class="title">PETA DESA</h1>
+            <p class="subtitle">Menampilkan Peta Desa Dengan <strong><em>Interest Point</em></strong> Desa Kersik</p>
+        </div>
 
-        </section>    
+        <section class="map-container">
+            
+            <div class="map-toolbar">
+                <input type="text" class="search-input" placeholder="Telusuri Peta...">
+                <select class="filter-select">
+                    <option value="">Lihat Semua</option>
+                    <option value="pemerintahan">Pemerintahan</option>
+                    <option value="pendidikan">Pendidikan</option>
+                </select>
+            </div>
+
+            <div class="map-embed-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29004.66752078398!2d107.13696383060459!3d-6.913521903556217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6850fa889c13c5%3A0x298a155138b01889!2sSukamaju%2C%20Kec.%20Cibeber%2C%20Kabupaten%20Cianjur%2C%20Jawa%20Barat!5e1!3m2!1sid!2sid!4v1754929128864!5m2!1sid!2sid" 
+                    width="600" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Peta Interaktif Desa">
+                </iframe>
+            </div>
+
+        </section>
+    </div>
+        </section>   
     </main>
 
     <!-- Footer -->
@@ -55,7 +87,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/logo-desa.png" alt="Logo Desa Sukamaju" class="footer-logo-img">
+                        <img src="../assets/logo-desa.png" alt="Logo Desa Sukamaju" class="footer-logo-img">
                         <div>
                             <h3>Desa Sukamaju</h3>
                             <p>Maju Bersama Menuju Sejahtera</p>
@@ -127,6 +159,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

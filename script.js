@@ -535,7 +535,7 @@ function performSearch(e) {
     
     // Simple search implementation
     const searchableContent = [
-        { title: 'Beranda', content: 'sejarah geografis penduduk', url: '#beranda' },
+        { title: 'Beranda', content: 'sejarah geografis penduduk', url: '#profil-desa' },
         { title: 'Profil Desa', content: 'sejarah geografis penduduk', url: '#profil-desa' },
         { title: 'Visi Misi', content: 'tujuan arah pembangunan', url: '#visi-misi' },
         { title: 'Layanan Surat', content: 'surat keterangan domisili', url: '#layanan-publik' },
