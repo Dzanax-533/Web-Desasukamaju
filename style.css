@@ -3684,3 +3684,200 @@ body {
         text-align: center;
     }
 }
+
+        /* ======================================= */
+        /* ====== BAGIAN ADMINISTRASI PENDUDUK ====== */
+        /* ======================================= */
+
+        /* Pengaturan Font & Warna Dasar (Bisa digabung di file CSS utama) */
+        :root {
+            --primary-blue: #2c3e50;
+            --secondary-blue: #3498db;
+            --text-dark: #333;
+            --text-light: #666;
+            --border-color: #eeeeee;
+            --background-light: #f8f9fa;
+        }
+
+        /* Kontainer Utama untuk bagian ini */
+        .population-stats {
+            max-width: 960px;
+            margin: 0 auto 60px auto; /* Memberi jarak bawah ke section APB */
+        }
+
+        /* Header Judul */
+        .population-stats__header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .population-stats__title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin: 0 0 10px 0;
+        }
+
+        .population-stats__description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Grid untuk Statistik */
+        .population-stats__grid {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Item Statistik Individual */
+        .population-stats__item {
+            display: flex;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .population-stats__item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            z-index: 10;
+        }
+
+        .population-stats__number {
+            background-color: var(--secondary-blue);
+            color: white;
+            padding: 20px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+        }
+
+        .population-stats__label {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            border-left: 1px solid var(--border-color);
+        }
+
+        /* Aturan Responsif untuk Statistik Penduduk */
+        @media (max-width: 768px) {
+            .population-stats__grid {
+                grid-template-columns: 1fr;
+            }
+            .population-stats__title {
+                font-size: 2rem;
+            }
+        }
+
+
+        /* ======================================= */
+        /* ====== BAGIAN APB DESA ====== */
+        /* ======================================= */
+
+        .apb-section {
+            padding: 60px 20px;
+            background-color: #fff; /* Memberi latar belakang putih agar menonjol */
+        }
+
+        .apb-section__container {
+            display: flex;
+            align-items: center;
+            gap: 60px; /* Jarak antara gambar dan teks */
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        /* Kolom Kiri: Ilustrasi */
+        .apb-section__illustration {
+            flex: 1;
+            min-width: 40%;
+            text-align: center;
+        }
+
+        .apb-section__illustration img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Kolom Kanan: Detail Data */
+        .apb-section__details {
+            flex: 1.5; /* Memberi lebih banyak ruang untuk teks */
+        }
+
+        .apb-section__title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+        }
+
+        .apb-section__subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0 0 30px 0;
+        }
+
+        /* Kartu Data */
+        .apb-section__card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+            border-left: 5px solid var(--secondary-blue);
+        }
+
+        .apb-section__card-label {
+            font-size: 1rem;
+            color: #777;
+            margin: 0 0 5px 0;
+        }
+
+        .apb-section__card-amount {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #444;
+            margin: 0;
+            word-break: break-all;
+        }
+
+        /* Link Lihat Data */
+        .apb-section__view-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .apb-section__view-more:hover {
+            color: var(--secondary-blue);
+        }
+
+        /* Aturan Responsif untuk APB Desa */
+        @media (max-width: 992px) {
+            .apb-section__container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .apb-section__illustration {
+                margin-bottom: 30px;
+            }
+            .apb-section__card-amount {
+                font-size: 1.8rem;
+            }
+        }
