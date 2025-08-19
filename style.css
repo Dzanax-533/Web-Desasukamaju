@@ -3193,7 +3193,7 @@ body {
         .page-header .title {
             font-size: 2.8rem;
             font-weight: 900;
-            color: #c42727; /* Merah */
+            color: #3498db; /* Merah */
             margin: 0;
             text-transform: uppercase;
         }
@@ -3204,7 +3204,7 @@ body {
             margin: 5px 0 0 0;
         }
         .page-header .subtitle strong em {
-            color: #c42727;
+            color: #3498db;
         }
 
         /* --- Bagian Utama Kontainer Peta --- */

@@ -1,0 +1,194 @@
+/* --- Pengaturan Dasar & Variabel --- */
+:root {
+    --primary-blue: #3498db;
+    --text-dark: #333;
+    --text-light: #777;
+    --border-color: #e0e0e0;
+    --background-light: #f9f9f9;
+}
+
+/* Konten Utama */
+.shop-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* --- Header Halaman --- */
+.shop-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+.shop-header h1 {
+    color: var(--primary-blue);
+    margin: 0 0 10px 0;
+}
+
+/* --- Tampilan 1: Galeri Produk --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+.product-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card .card-body {
+    padding: 15px;
+}
+.product-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+.product-card .rating {
+    color: #f39c12;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.product-card .price {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+/* --- Tampilan 2: Detail Produk --- */
+.hidden {
+    display: none !important;
+}
+.back-button {
+    background: none;
+    border: none;
+    color: var(--primary-blue);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+.product-gallery .main-image {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.thumbnail-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.thumbnail-container img.active {
+    border-color: var(--primary-blue);
+}
+.product-info .info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.product-info h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+.product-info .like-icon {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+.product-info .info-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 10px 0 20px 0;
+}
+.product-info .info-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+.product-info .info-description {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.contact-button {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.contact-button:hover {
+    background-color: #2980b9;
+}
+.share-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.share-icons a {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* --- Ulasan Pembeli --- */
+.product-reviews {
+    margin-top: 30px;
+}
+.product-reviews h3 {
+    margin-bottom: 20px;
+}
+.no-reviews {
+    background-color: var(--background-light);
+    padding: 30px;
+    text-align: center;
+    color: var(--text-light);
+    border-radius: 8px;
+}
+.no-reviews i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* --- Responsif --- */
+@media (max-width: 768px) {
+    .detail-content {
+        grid-template-columns: 1fr;
+    }
+}

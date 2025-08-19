@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja - Desa Sukamaju</title>
+    
+    <!-- Hubungkan CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="stylebelanja.css"> 
+    
+    <!-- Hubungkan Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="../assets/logo-desa.png">
+</head>
+<body>
+    <!-- Header dari Anda -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="../assets/logo-desa.png" alt="Logo Desa Sukamaju" class="logo">
+                <div class="title-section">
+                    <h1>Desa Sukamaju</h1>
+                    <p>Kecamatan Cibeber, Kabupaten Cianjur</p>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="../profil-desa/profil-desa.html" class="nav-link">Profil Desa</a></li>
+                    <li><a href="../infografis/infografis.html" class="nav-link">Infografis</a></li>
+                    <li><a href="../listing/listing.html" class="nav-link">Listing</a></li>
+                    <li><a href="../news/berita.html" class="nav-link">Berita</a></li>
+                    <li><a href="belanja.html" class="nav-link active">Belanja</a></li>
+                    <li><a href="#" class="nav-link">PPID</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama Halaman Belanja -->
+    <main class="shop-container">
+
+        <!-- ===== TAMPILAN 1: GALERI PRODUK (AWAL) ===== -->
+        <div id="product-gallery-view">
+            <header class="shop-header">
+                <h1>Beli Dari Desa</h1>
+                <p>Layanan yang disediakan promosi produk UMKM desa sehingga mampu meningkatkan perekonomian masyarakat desa.</p>
+            </header>
+
+            <div class="product-grid">
+                <!-- Produk akan diisi oleh JavaScript -->
+            </div>
+        </div>
+
+        <!-- ===== TAMPILAN 2: DETAIL PRODUK (TERSEMBUNYI) ===== -->
+        <div id="product-detail-view" class="hidden">
+            <!-- Konten detail akan diisi oleh JavaScript -->
+        </div>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/logo-desa.png" alt="Logo Desa Sukamaju" class="footer-logo-img">
+                        <div>
+                            <h3>Desa Sukamaju</h3>
+                            <p>Maju Bersama Menuju Sejahtera</p>
+                        </div>
+                    </div>
+                    <p>Website resmi Pemerintah Desa Sukamaju yang menyediakan informasi dan layanan publik berbasis digital untuk kemudahan masyarakat.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Menu Utama</h4>
+                    <ul>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="../profil-desa/profil-desa.html">Profil Desa</a></li>
+                        <li><a href="../infografis/infografis.html">Infografis</a></li>
+                        <li><a href="#layanan-publik">Layanan Publik</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#data-statistik">Data Desa</a></li>
+                        <li><a href="#umkm">UMKM Desa</a></li>
+                        <li><a href="#ppid">PPID</a></li>
+                        <li><a href="#apbdes">APBDes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Kontak Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Sukamaju, Kec. Cibeber, Kabupaten Cianjur, Jawa Barat 43262</p>
+                        <p><i class="fas fa-phone"></i> 0831-1274-0004</p>
+                        <p><i class="fas fa-envelope"></i> sukamajucibeber@gmail.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Pemerintah Desa Sukamaju. Hak Cipta Dilindungi.</p>
+                    <div class="footer-links">
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
