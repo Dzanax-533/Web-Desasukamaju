@@ -994,9 +994,10 @@ body {
         .shop-header .title {
             font-size: 2.5rem;
             font-weight: 900;
-            color: #d93b3f; /* Warna Merah */
+            color: #3498db; /* Warna Merah */
             margin: 0;
             text-transform: uppercase;
+            text-align: center;
         }
 
         .shop-header .subtitle {
@@ -1298,7 +1299,7 @@ body {
 .section-header .title {
     font-size: 2.5rem;
     font-weight: 900;
-    color: #d93b3f; /* Warna Merah */
+    color: #3498db; /* Warna Merah */
     margin: 0;
     text-transform: uppercase;
 }
@@ -1366,9 +1367,9 @@ body {
 }
 
 .pagination a.active {
-    background-color: #d93b3f; /* Warna Merah */
+    background-color: #3498db; /* Warna Merah */
     color: white;
-    border-color: #d93b3f;
+    border-color: #3498db;
 }
 
 /* Aturan Responsif */
